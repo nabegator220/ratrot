@@ -611,7 +611,7 @@
     explosionType: Default
     maxIntensity: 750
     intensitySlope: 50
-    totalIntensity: 14000
+    totalIntensity: 19000
     maxTileBreak: 16
   - type: PointLight
     radius: 3.5
