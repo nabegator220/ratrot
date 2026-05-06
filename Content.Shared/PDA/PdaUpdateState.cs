@@ -13,7 +13,7 @@ namespace Content.Shared.PDA
         public bool HasPai;
         public PdaIdInfoText PdaOwnerInfo;
         public string? StationName;
-        public string Coordinates;
+        public string? Coordinates;
         public bool HasUplink;
         public bool CanPlayMusic;
         public string? Address;
@@ -26,7 +26,7 @@ namespace Content.Shared.PDA
             bool hasPai,
             PdaIdInfoText pdaOwnerInfo,
             string? stationName,
-            string coordinates,
+            string? coordinates,
             bool hasUplink = false,
             bool canPlayMusic = false,
             string? address = null)
