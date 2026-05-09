@@ -6,4 +6,4 @@
   - type: Sprite
     state: cpu_medical
   - type: ComputerBoard
-    prototype: ComputerIntredyneLifeInsurance
+    prototype: ComputerInterdyneLifeInsurance

@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseComputer
-  id: ComputerIntredyneLifeInsurance
+  id: ComputerInterdyneLifeInsurance
   name: консоль страхования Interdyne
   description: Управление страховкой жизни людей. Позволяет удаленно ускорить создание клона, обойдя ограничение на количество должностей на станции клиента.
   placement:
