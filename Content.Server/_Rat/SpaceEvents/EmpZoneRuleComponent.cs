@@ -25,7 +25,7 @@ public sealed partial class EmpZoneRuleComponent : Component
     public TimeSpan ZoneAppearTime = TimeSpan.Zero;
   
     [DataField]
-    public TimeSpan ZoneAppearDelay = TimeSpan.FromMinutes(5);
+    public TimeSpan ZoneAppearDelay = TimeSpan.FromMinutes(1);
 
     [DataField]
     public float EmpRange = 20f;

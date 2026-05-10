@@ -12,9 +12,9 @@ public sealed class EmpZoneClientSystem : EntitySystem
     [Dependency] private readonly ISharedPlayerManager _playerMan = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
 
-    public bool ZoneActive { get; private set; } = false;
-    public Vector2 ZoneCenter { get; private set; } = Vector2.Zero;
-    public float ZoneRadius { get; private set; } = 500f;
+    private readonly Dictionary<int, (Vector2 Center, float Radius)> _activeZones = new();
+    public IReadOnlyDictionary<int, (Vector2 Center, float Radius)> ActiveZones => _activeZones;
+    public bool ZoneActive => _activeZones.Count > 0;
 
     private EmpZoneScreenOverlay _overlay = default!;
     private bool _playerInZone = false;
@@ -33,21 +33,20 @@ public sealed class EmpZoneClientSystem : EntitySystem
 
     private void OnZoneActivated(EmpZoneActivatedEvent ev)
     {
-        ZoneActive = true;
-        ZoneCenter = ev.Center;
-        ZoneRadius = ev.Radius;
+        _activeZones[ev.ZoneId] = (ev.Center, ev.Radius);
         _checkTimer = CheckInterval;
     }
 
     private void OnZoneDeactivated(EmpZoneDeactivatedEvent ev)
     {
-        ZoneActive = false;
-        RemoveOverlayIfNeeded();
+        _activeZones.Remove(ev.ZoneId);
+        if (_activeZones.Count == 0)
+            RemoveOverlayIfNeeded();
     }
 
     private void OnRoundRestart(RoundRestartCleanupEvent ev)
     {
-        ZoneActive = false;
+        _activeZones.Clear();
         RemoveOverlayIfNeeded();
     }
 
@@ -79,15 +78,23 @@ public sealed class EmpZoneClientSystem : EntitySystem
         }
 
         var worldPos = _transform.GetWorldPosition(player.Value);
-        var dist = (worldPos - ZoneCenter).Length();
-        var inZone = dist <= ZoneRadius;
 
-        if (inZone && !_playerInZone)
+        var inAnyZone = false;
+        foreach (var (_, (center, radius)) in _activeZones)
+        {
+            if ((worldPos - center).Length() <= radius)
+            {
+                inAnyZone = true;
+                break;
+            }
+        }
+
+        if (inAnyZone && !_playerInZone)
         {
             _playerInZone = true;
             _overlayMan.AddOverlay(_overlay);
         }
-        else if (!inZone && _playerInZone)
+        else if (!inAnyZone && _playerInZone)
         {
             _playerInZone = false;
             _overlayMan.RemoveOverlay(_overlay);

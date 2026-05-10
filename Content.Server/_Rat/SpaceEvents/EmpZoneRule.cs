@@ -48,7 +48,7 @@ public sealed class EmpZoneRule : StationEventSystem<EmpZoneRuleComponent>
     {
         base.Ended(uid, component, gameRule, args);
 
-        RaiseNetworkEvent(new EmpZoneDeactivatedEvent(), Filter.Broadcast());
+        RaiseNetworkEvent(new EmpZoneDeactivatedEvent(uid.Id), Filter.Broadcast());
 
         ChatSystem.DispatchGlobalAnnouncement(
             Loc.GetString("emp-zone-event-ended"),
@@ -69,6 +69,7 @@ public sealed class EmpZoneRule : StationEventSystem<EmpZoneRuleComponent>
             {
                 comp.ZoneActive = true;
                 RaiseNetworkEvent(new EmpZoneActivatedEvent(
+				    uid.Id,
                     comp.ZoneCenter,
                     comp.ZoneRadius), Filter.Broadcast());
             }

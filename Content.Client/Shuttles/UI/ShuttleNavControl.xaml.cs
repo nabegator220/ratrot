@@ -1001,18 +1001,18 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             10000 * MinimapScale, 20000 * MinimapScale,
             new Color(1f, 0f, 0f, 0.01f), new Color(1f, 0f, 0f, 0.1f));
 
-        if (_empZone.ZoneActive)
+        foreach (var (_, (center, radius)) in _empZone.ActiveZones)
         {
-            var empCenterUI = Vector2.Transform(_empZone.ZoneCenter, ourWorldMatrixInvert);
+            var empCenterUI = Vector2.Transform(center, ourWorldMatrixInvert);
             empCenterUI.Y = -empCenterUI.Y;
             var empScreenPos = ScalePosition(empCenterUI);
-            var empScreenRadius = _empZone.ZoneRadius * MinimapScale;
+            var empScreenRadius = radius * MinimapScale;
 
             handle.DrawCircle(empScreenPos, empScreenRadius, new Color(0f, 0.8f, 1f, 0.03f));
             handle.DrawCircle(empScreenPos, empScreenRadius, new Color(0f, 0.8f, 1f, 0.2f), filled: false);
         }
 
- }
+     }
     // Rat-end
 
     private Vector2 InverseScalePosition(Vector2 value)

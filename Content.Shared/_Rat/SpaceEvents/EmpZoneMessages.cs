@@ -6,11 +6,13 @@ namespace Content.Shared._Rat.SpaceEvents;
 [Serializable, NetSerializable]
 public sealed class EmpZoneActivatedEvent : EntityEventArgs
 {
-    public Vector2 Center;
+    public int ZoneId;
+	public Vector2 Center;
     public float Radius;
 
-    public EmpZoneActivatedEvent(Vector2 center, float radius)
+    public EmpZoneActivatedEvent(int zoneId, Vector2 center, float radius)
     {
+		ZoneId = zoneId;
         Center = center;
         Radius = radius;
     }
@@ -19,4 +21,10 @@ public sealed class EmpZoneActivatedEvent : EntityEventArgs
 [Serializable, NetSerializable]
 public sealed class EmpZoneDeactivatedEvent : EntityEventArgs
 {
+    public int ZoneId;
+
+    public EmpZoneDeactivatedEvent(int zoneId)
+    {
+        ZoneId = zoneId;
+    }
 }
