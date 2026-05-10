@@ -86,8 +86,8 @@
         posY: 0
       RatBuran:
         gameMapID: RatBuran
-        posX: -500
-        posY: 4300
+        posX: -2500
+        posY: 3500
       RatKovf:
         gameMapID: RatKovf
         posX: 500
