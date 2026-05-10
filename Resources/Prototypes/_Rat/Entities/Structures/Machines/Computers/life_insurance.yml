@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseComputer
   id: ComputerInterdyneLifeInsurance
-  name: консоль страхования Interdyne
-  description: Управление страховкой жизни людей. Позволяет удаленно ускорить создание клона, обойдя ограничение на количество должностей на станции клиента.
+  name: Interdyne Insurance Console
+  description: Managing people's life insurance. Allows you to remotely speed up the creation of a clone, bypassing the limit on the number of positions on the client's station.
   placement:
     mode: SnapgridCenter
   components:
