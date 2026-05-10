@@ -269,6 +269,10 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
                 continue;
 
             var mapCoords = _shuttles.GetMapCoordinates(mapObj);
+			// Rat-start
+			if (mapCoords == MapCoordinates.Nullspace)
+                continue;
+			// Rat-end
 
             var relativePos = Vector2.Transform(mapCoords.Position, matty);
             relativePos = relativePos with { Y = -relativePos.Y };
