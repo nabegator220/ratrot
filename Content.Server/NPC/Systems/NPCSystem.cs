@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Diagnostics.CodeAnalysis;
 using Content.Server.NPC.Components;
 using Content.Server.NPC.HTN;
@@ -52,6 +53,7 @@ namespace Content.Server.NPC.Systems
         private const float PlayerDistanceCheckInterval = 2.0f;
         
         private readonly List<(EntityUid Entity, EntityCoordinates Coords)> _playerPauseCandidates = new();
+        private readonly HashSet<EntityUid> _activePlayers = new();
         // Rat-end
 
         /// <inheritdoc />
@@ -64,6 +66,10 @@ namespace Content.Server.NPC.Systems
             // Rat-start
             Subs.CVar(_configurationManager, CCVars.NPCPauseWhenNoPlayersInRange, value => _pauseWhenNoPlayersInRange = value, true);
             Subs.CVar(_configurationManager, CCVars.NPCPlayerPauseDistance, value => _playerPauseDistance = value, true);
+            // Events
+            SubscribeLocalEvent<RoundStartedEvent>(OnRoundStart);
+            SubscribeLocalEvent<PlayerAttachedEvent>(OnPlayerAttached);
+            SubscribeLocalEvent<PlayerDetachedEvent>(OnPlayerDetached);
             // Rat-end
         }
 
@@ -94,6 +100,31 @@ namespace Content.Server.NPC.Systems
         {
             SleepNPC(uid, component);
         }
+
+        // Rat-start
+        public void OnRoundStart()
+        {
+            _activePlayers.Clear();
+        }
+
+        public void OnPlayerAttached(PlayerAttachedEvent args)
+        {
+            if (_playerManager.TryGetSessionById(args.Player.UserId, out var session) &&
+             session.AttachedEntity is { Valid: true } playerUid)
+            {
+                _activePlayers.Add(playerUid);
+            }
+        }
+
+        public void OnPlayerDetached(PlayerDetachedEvent args)
+        {
+            if (_playerManager.TryGetSessionById(args.Player.UserId, out var session) &&
+             session.AttachedEntity is { Valid: true } playerUid)
+            {
+                _activePlayers.Remove(playerUid);
+            }
+        }
+        // Rat-end
 
         /// <summary>
         /// Is the NPC awake and updating?
@@ -184,12 +215,9 @@ namespace Content.Server.NPC.Systems
         private void CheckPlayerDistancesAndPauseNPCs()
         {
             _playerPauseCandidates.Clear();
-            foreach (var playerData in _playerManager.GetAllPlayerData())
+            foreach (var playerEnt in _activePlayers.ToList())
             {
-                if (!_playerManager.TryGetSessionById(playerData.UserId, out var session) || session == null)
-                    continue;
-
-                if (session.AttachedEntity is not { Valid: true } playerEnt)
+                if (!playerEnt.Valid || TerminatingOrDeleted(playerEnt))
                     continue;
 
                 if (HasComp<GhostComponent>(playerEnt))
@@ -208,7 +236,7 @@ namespace Content.Server.NPC.Systems
             while (npcQuery.MoveNext(out var npcUid, out var htn, out var npcTransform))
             {
                 if (HasComp<ActorComponent>(npcUid) ||
-                    (TryComp<MindContainerComponent>(npcUid, out var mindContainer) && mindContainer.HasMind))
+                    TryComp<MindContainerComponent>(npcUid, out var mindContainer) && mindContainer.HasMind)
                     continue;
                 if (_mobState.IsIncapacitated(npcUid))
                     continue;
