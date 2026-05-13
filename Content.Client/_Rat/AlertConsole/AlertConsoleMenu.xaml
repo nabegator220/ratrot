@@ -20,7 +20,7 @@
         <!-- Cooldown -->
         <Label Text="{Loc 'alert-console-cooldown-label'}" Margin="0 0 0 2"/>
         <BoxContainer Orientation="Horizontal" HorizontalExpand="True" Margin="0 0 0 6">
-            <Slider Name="CooldownSlider" HorizontalExpand="True" MinValue="5" MaxValue="600" Value="60"/>
+            <Slider Name="CooldownSlider" HorizontalExpand="True" MinValue="5" MaxValue="3600" Value="60"/>
             <Label Name="CooldownValueLabel" Text="60 сек" Margin="6 0 0 0" MinSize="70 0" VerticalAlignment="Center"/>
         </BoxContainer>
 

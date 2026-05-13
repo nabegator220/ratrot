@@ -14,6 +14,7 @@ namespace Content.Server._Rat.AlertConsole;
 
 public sealed class AlertConsoleSystem : EntitySystem
 {
+    private const int MaxMessageLength = 300;
     [Dependency] private readonly RadioSystem _radio = default!;
     [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
@@ -117,10 +118,15 @@ public sealed class AlertConsoleSystem : EntitySystem
     {
         comp.Enabled = args.Enabled;
         comp.DetectionRadius = Math.Clamp(args.DetectionRadius, 10f, 2000f);
-        comp.FactionChannel = args.FactionChannel.Trim();
-        comp.StationAlertMessage = args.StationAlertMessage;
+        var trimmedChannel = args.FactionChannel.Trim();
+        comp.FactionChannel = string.IsNullOrEmpty(trimmedChannel) ? "Common" : trimmedChannel;
+        comp.StationAlertMessage = args.StationAlertMessage.Length > MaxMessageLength
+            ? args.StationAlertMessage[..MaxMessageLength]
+            : args.StationAlertMessage;
         comp.BroadcastToShuttle = args.BroadcastToShuttle;
-        comp.ShuttleAlertMessage = args.ShuttleAlertMessage;
+        comp.ShuttleAlertMessage = args.ShuttleAlertMessage.Length > MaxMessageLength
+            ? args.ShuttleAlertMessage[..MaxMessageLength]
+            : args.ShuttleAlertMessage;
         comp.AlertCooldownSeconds = Math.Clamp(args.AlertCooldownSeconds, 5f, 3600f);
         Dirty(uid, comp);
         UpdateUiState(uid, comp);

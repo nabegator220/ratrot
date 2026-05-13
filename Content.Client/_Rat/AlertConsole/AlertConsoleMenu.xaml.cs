@@ -46,7 +46,7 @@ public sealed partial class AlertConsoleMenu : DefaultWindow
 
         ChannelEdit.Text = state.FactionChannel;
 
-        CooldownSlider.SetValueWithoutEvent(Math.Clamp(state.AlertCooldownSeconds, 5f, 600f));
+        CooldownSlider.SetValueWithoutEvent(Math.Clamp(state.AlertCooldownSeconds, 5f, 3600f));
         CooldownValueLabel.Text = $"{(int) state.AlertCooldownSeconds} сек";
 
         StationMessageEdit.Text = state.StationAlertMessage;

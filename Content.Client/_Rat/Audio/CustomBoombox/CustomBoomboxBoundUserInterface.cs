@@ -2,7 +2,6 @@ using Content.Shared._Rat.Audio.CustomBoombox;
 using Robust.Client.Audio;
 using Robust.Client.UserInterface;
 using Robust.Shared.Audio;
-using Robust.Shared.Audio.Components;
 using Robust.Shared.IoC;
 using Robust.Shared.Network;
 
@@ -74,12 +73,6 @@ public sealed class CustomBoomboxBoundUserInterface : BoundUserInterface
 
     private void SetTime(float time)
     {
-        if (EntMan.TryGetComponent(Owner, out CustomBoomboxComponent? boom) &&
-            EntMan.TryGetComponent(boom.AudioStream, out AudioComponent? audioComp))
-        {
-            audioComp.PlaybackPosition = time;
-        }
-
         SendMessage(new CustomBoomboxSetTimeMessage(time));
     }
 }
