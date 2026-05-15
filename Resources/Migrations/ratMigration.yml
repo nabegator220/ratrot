@@ -30,3 +30,5 @@ CockroachMothershipComputer: RatCockroachMothershipComputer
 FadeemMothershipComputer: RatFadeemMothershipComputer
 PsoglavMothershipComputer: RatPsoglavMothershipComputer
 CovetorMothershipComputer: RatCovetorMothershipComputer
+
+StationAnchor: StationAnchorIndestructible
