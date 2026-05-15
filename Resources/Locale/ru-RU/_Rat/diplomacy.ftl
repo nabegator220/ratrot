@@ -31,7 +31,7 @@ diplomacy-proposal-type-alliance = Предложение союза
 diplomacy-proposal-type-trade = Предложение торговли
 diplomacy-proposal-type-unknown = Неизвестно
 
-diplomacy-announce-war =  { $faction1 } объявляет войну { $faction2 }!
+diplomacy-announce-war = { $faction1 } объявляет войну { $faction2 }!
 diplomacy-announce-trade-broken = { $faction1 } разорвала торговое соглашение с { $faction2 }!
 diplomacy-announce-peace-proposal = { $from } предлагает мир фракции { $to }.
 diplomacy-announce-alliance-proposal = { $from } предлагает союз фракции { $to }.
