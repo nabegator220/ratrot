@@ -1,5 +1,4 @@
 using System.Numerics;
-using Content.Server._Rat.SpaceEvents;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 using Robust.Shared.Prototypes;
 
