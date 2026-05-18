@@ -928,5 +928,12 @@ Entries:
     id: 111
     time: '2026-05-18T13:58:08.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/217
+  - author: shad4338
+    changes:
+      - type: Add
+        message: Музыка в титрах была заменена на новую, более подходящую по атмосфере.
+    id: 112
+    time: '2026-05-18T14:17:49.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/223
 Name: Rat
 Order: -1
