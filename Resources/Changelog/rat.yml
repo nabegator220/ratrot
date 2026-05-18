@@ -915,5 +915,18 @@ Entries:
     id: 110
     time: '2026-05-17T12:00:23.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/216
+  - author: shad4338
+    changes:
+      - type: Add
+        message: Добавлена новая боевая музыка для ЛРНП.
+      - type: Fix
+        message: Скафандр Егуи был починен, а также получил меньшую цену.
+      - type: Tweak
+        message: Количество форонов, изотопов, механитов и галайна в продаже интердайна в ящике было увеличено с 15-и до 90-а
+      - type: Remove
+        message: Удалены скафандры Xingtian и RAIKU для Кибердона и Шиногары.
+    id: 111
+    time: '2026-05-18T13:58:08.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/217
 Name: Rat
 Order: -1
