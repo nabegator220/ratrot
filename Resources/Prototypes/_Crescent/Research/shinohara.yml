@@ -461,7 +461,7 @@
   cost: 12500
   recipeUnlocks:
   - ClothingOuterHardsuitSHIJuggernaut
-  - ClothingOuterHardsuitSHISpeedsuit
+#  - ClothingOuterHardsuitSHISpeedsuit
 
 - type: technology
   id: ShinoharaNTBallistics
