@@ -958,5 +958,12 @@ Entries:
     id: 115
     time: '2026-05-20T15:25:32.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/229
+  - author: furo8484-wq
+    changes:
+      - type: Fix
+        message: Теперь безгильзовые патроны можно крафтить на микро кузне
+    id: 116
+    time: '2026-05-20T16:59:24.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/230
 Name: Rat
 Order: -1
