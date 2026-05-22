@@ -928,7 +928,7 @@
   parent: BaseItem
   id: ShipVoucherShark
   name: CSEC 'Shark' pattern LPC fabprint disk
-  description: An LPC fabprint disk loaded with a CorpSec Shark-class security corvette pattern. Has to be redeemed at a shipyard console.
+  description: An LPC fabprint disk loaded with a CorpSec Shark-class security heavy destroyer pattern. Has to be redeemed at a shipyard console.
   components:
   - type: Item
     size: Small
