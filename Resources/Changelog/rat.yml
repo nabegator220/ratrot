@@ -979,5 +979,16 @@ Entries:
     id: 118
     time: '2026-05-22T16:08:58.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/234
+  - author: ChangelingRUES
+    changes:
+      - type: Add
+        message: Добавлен фабрикатор корабельных снарядов и пара ящиков БК 20-35мм для баллистических пушек шаттлов.
+      - type: Tweak
+        message: 'Изменения в шлюзах Анвила: были переставлены в арсенал, чтобы вы могли пойти по кругу!'
+      - type: Fix
+        message: Исправлены орудия Анвила, теперь стоят корректно.
+    id: 119
+    time: '2026-05-23T11:59:19.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/233
 Name: Rat
 Order: -1
