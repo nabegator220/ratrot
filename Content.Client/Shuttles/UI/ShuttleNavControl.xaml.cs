@@ -699,7 +699,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             cannonLocal.Y = -cannonLocal.Y;
             var cannonUIPos = ScalePosition(cannonLocal);
 
-            handle.DrawLine(cannonUIPos, MouseUIPosition, Color.Cyan.WithAlpha(0.6f));
+            handle.DrawLine(cannonUIPos, MouseUIPosition, Color.Red.WithAlpha(0.1f));
         }
     }
 	// Rat-end
