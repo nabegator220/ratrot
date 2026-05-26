@@ -94,13 +94,13 @@ public sealed class SonarPingSystem : EntitySystem
             if (count == 0)
                 continue;
 
-            //var azimuth = GetAzimuthDegrees(closestPos - ourPos); ratgore soot note - this is cancer.
+            var azimuth = GetAzimuthDegrees(closestPos - ourPos);
             var distance = Math.Round(MathF.Sqrt(closestSq));
 
             var message = Loc.GetString("sonar-ping-alert-message",
                 ("count", count),
-                ("distance", distance));
-                //("azimuth", azimuth));
+                ("distance", distance),
+                ("azimuth", azimuth));
 
             _chatSystem.TrySendInGameICMessage(uid, message, InGameICChatType.Speak, ChatTransmitRange.Normal);
             detector.lastAlert = worldTime + AlertCooldown;
