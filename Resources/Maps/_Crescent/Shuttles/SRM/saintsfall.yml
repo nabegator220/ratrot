@@ -1034,8 +1034,8 @@ entities:
     - type: NamedModules
       buttonNames:
       - Toggle 48mm
-      - Toggle 50mm
-      - Toggle 50 mm blastdoor
+      - Toggle 35mm
+      - Toggle 35mm blastdoor
       - '-----'
       - '-----'
     - type: ContainerContainer
