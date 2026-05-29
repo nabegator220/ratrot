@@ -56,7 +56,7 @@
   materials:
     Durathread: 1500
     Tungsten: 750
-    Steel: 1500
+    Steel: 2000
     HardsuitElectronics: 500
 
 - type: latheRecipe
@@ -64,11 +64,11 @@
   result: ClothingOuterHardsuitSyndieMedic
   completetime: 1.5
   materials:
-    HardsuitElectronics: 500
-    Silver: 500
+    HardsuitElectronics: 1000
+    Silver: 1000
     Durathread: 1500
-    Steel: 1500
-    Tungsten: 1000
+    Steel: 3000
+    Tungsten: 2000
 
 - type: latheRecipe
   id: ClothingOuterHardsuitCybersunStealthCyberdawn
@@ -76,21 +76,21 @@
   completetime: 1.5
   materials:
     HardsuitElectronics: 500
-    Silver: 750
+    Silver: 1500
     Durathread: 1500
     NanotrasenElectronics: 500
-    Steel: 1500
+    Steel: 3000
 
 - type: latheRecipe
   id: ClothingOuterHardsuitCybersunDreadnoughtCyberdawn
   result: ClothingOuterHardsuitCybersunDreadnought
   completetime: 1.5
   materials:
-    HardsuitElectronics: 500
-    Silver: 750
+    HardsuitElectronics: 2000
+    Silver: 4000
     Durathread: 2500
-    NanotrasenElectronics: 500
-    Steel: 1500
+    NanotrasenElectronics: 1000
+    Steel: 6000
 
 # MARK: Equipment
 
@@ -233,34 +233,28 @@
   result: WeaponSubMachineGunAtreidesHullrot
   completetime: 1.5
   materials:
-    Steel: 1500
-    BallisticCycler: 500 #one of the few actually good SMGs
+    Steel: 4000
+    Silver: 1000
+    BallisticCycler: 1500
 
 - type: latheRecipe
   id: WeaponSubMachineGunCorsairCyberdawn
   result: WeaponSubMachineGunCorsair
   completetime: 1.5
   materials:
-    Steel: 1200
-    Plastic: 500
-    BallisticCycler: 500
-
-- type: latheRecipe
-  id: WeaponRifleAkCyberdawn
-  result: WeaponRifleAk
-  completetime: 1.5
-  materials:
-    Steel: 1500
-    Plastic: 300
-    BasicMechatronics: 1000
+    Steel: 3000
+    Plastic: 1000
+    Silver: 1000
+    BallisticCycler: 1000
 
 - type: latheRecipe
   id: WeaponRifleKrinkovCyberdawn
   result: WeaponRifleKrinkov
   completetime: 1.5
   materials:
-    Steel: 1000
-    BasicMechatronics: 500
+    Steel: 2000
+    Plastic: 500
+    BallisticCycler: 500
 
 - type: latheRecipe
   id: WeaponPistolViperWoodCyberdawn
@@ -285,76 +279,87 @@
   result: WeaponLightMachineGunNCSPRPD
   completetime: 1.5
   materials:
-    Steel: 2500
+    Steel: 4000
     Plastic: 1500
     Silver: 1000
-    BallisticCycler: 1500
+    BallisticCycler: 2500
 
 - type: latheRecipe
   id: WeaponLightMachineGunCompaktCyberdawn
   result: WeaponLightMachineGunCompakt
   completetime: 1.5
   materials:
-    Steel: 2500
-    Plastic: 1000
-    Tungsten: 500
-    BallisticCycler: 1000
+    Steel: 4000
+    Plastic: 1500
+    Tungsten: 1000
+    BallisticCycler: 2000
 
 - type: latheRecipe
   id: WeaponRifleMayflower
   result: WeaponRifleMayflower
   completetime: 1.5
   materials:
-    Steel: 3000 #Increased steel requirement. Cheap Ballistic Cyclers.
+    Steel: 4000 
     Plastic: 1500
     Silver: 1000
-    BallisticCycler: 500
+    BallisticCycler: 1500
 
 - type: latheRecipe
   id: WeaponRifleUnderdogCyberdawn
   result: WeaponRifleUnderdog
   completetime: 1.5
   materials:
-    Steel: 2000
+    Steel: 4000
     Plastic: 1000
-    BasicMechatronics: 1000
-    BallisticCycler: 500
+    BasicMechatronics: 2000
+    BallisticCycler: 1000
 
 - type: latheRecipe
   id:  WeaponRifleSVDMarksmanNCSP
   result: WeaponRifleSVDMarksman
   completetime: 1.5
   materials:
-    Steel: 2000
-    BasicMechatronics: 1500
-    BallisticCycler: 1000
+    Steel: 4000
+    Tungsten: 1500
+    BasicMechatronics: 2000
+    BallisticCycler: 1500
 
 - type: latheRecipe
   id:  WeaponSniperAK60Cyberdawn
   result: WeaponSniperAK60
   completetime: 1.5
   materials:
-    Steel: 3000
-    Plastic: 1000
-    Silver: 800
+    Steel: 5000
+    Plastic: 2000
+    Silver: 1600
     BallisticCycler: 1500
+
+- type: latheRecipe
+  id: WeaponRifleAkCyberdawn
+  result: WeaponRifleAk
+  completetime: 1.5
+  materials:
+    Steel: 3000
+    Plastic: 2000
+    Silver: 1000
+    BallisticCycler: 1000
 
 - type: latheRecipe
   id:  WeaponShotgunTuberCyberdawn
   result: WeaponShotgunTuber
   completetime: 1.5
   materials:
-    Steel: 1000
-    Plastic: 500
-    BasicMechatronics: 1000
+    Steel: 2500
+    Plastic: 1500
+    BallisticCycler: 1000
 
 - type: latheRecipe
   id:  WeaponShotgunSaiga12NCSP
   result: WeaponShotgunNCSPSaiga12
   completetime: 1.5
   materials:
-    Steel: 1500
-    BasicMechatronics: 1000
+    Steel: 3000
+    BasicMechatronics: 2000
     BallisticCycler: 1000
 
 - type: latheRecipe
@@ -362,27 +367,29 @@
   result: WeaponLauncherRocket
   completetime: 1.5
   materials:
-    Steel: 2000
-    TubeLoader: 1000
-    Plastic: 500
+    Steel: 4000
+    TubeLoader: 2000
+    Plasma: 1000
+    Plastic: 1000
 
 - type: latheRecipe
   id:  WeaponCartridgeRPGLarge
   result: CartridgeRPG7Heat
   completetime: 1.5
   materials:
-    Steel: 500
-    Plasma: 300
-    Copper: 500
+    Steel: 1000
+    Plasma: 500
+    Copper: 300
 
 - type: latheRecipe
   id:  WeaponLauncherRPGNSCP
   result: WeaponLauncherSmallRocket
   completetime: 1.5
   materials:
-    Steel: 1500
-    TubeLoader: 500
+    Steel: 3000
+    TubeLoader: 1500
     Silver: 750
+    Plasma: 1000
 
 - type: latheRecipe
   id:  WeaponLCartridgeRPGSmall
@@ -488,7 +495,7 @@
   result: TubeLoader1
   completetime: 1.5
   materials:
-    BallisticCycler: 500
+    BallisticCycler: 1000
     Steel: 2000
 
 - type: latheRecipe
@@ -668,8 +675,8 @@
     AdvancedMechatronics: 1000
     Silver: 2000
     Steel: 1500
-    Gold: 500
-    BallisticCycler: 500
+    Gold: 1500
+    BallisticCycler: 1000
     Plasma: 1500
     HardlightGenerator: 1000
     LaserLocus: 500
@@ -681,10 +688,10 @@
   materials:
     AdvancedElectronics: 1500
     AdvancedMechatronics: 1500
-    Silver: 2000
-    Steel: 2000
-    Gold: 2000
-    Plasma: 3000
-    BallisticCycler: 1000
+    Silver: 3000
+    Steel: 4000
+    Gold: 3000
+    Plasma: 4000
+    BallisticCycler: 1500
     HardlightGenerator: 500
     LaserLocus: 500
