@@ -58,25 +58,18 @@ public sealed class AnomalyStationRule : StationEventSystem<AnomalyStationRuleCo
 
     private void SpawnAnomalyStation(AnomalyStationRuleComponent comp)
     {
-        MapId map = _gameTicker.DefaultMap;
+        var map = _gameTicker.DefaultMap;
 
         if (_loader.TryLoadGrid(map, new ResPath(comp.StationMapPath), out var grid,
          offset: comp.Coordinates))
         {
             if (grid is null) return;
 
-            int amountToSpawn = 4;
+            var amountToSpawn = 4;
 
-            for (int i = 0; i < amountToSpawn; i++)
-            {
-                if (!TryFindRandomTile(out _, out _, out _, out var coords))
-                    return;
-
-                Spawn(comp.ArtifactSpawnerPrototype, coords);
-                Spawn(comp.ArtifactFlashPrototype, coords);
-
-                Sawmill.Info($"Spawning random artifact at {coords}");
-            }
+            // TODO: Fuck AnomalySystem dependence
+            for (var i = 0; i < amountToSpawn; i++)
+                _anomaly.SpawnOnRandomGridLocation(grid.Value, comp.ArtifactSpawnerPrototype);
         }
 
         return;
