@@ -148,7 +148,7 @@
   - type: ExplosionResistance
     damageCoefficient: 0.6
   - type: DegradeableArmor
-    armorMaxHealth: 500
+    armorMaxHealth: 750
     armorType: Ceramic
     armorRepair: NTCeramic
     initialModifiers:
@@ -195,7 +195,7 @@
       - ClothingOuterHardsuitHighsecIndependent
       - ClothingOuterHardsuitHEV
   - type: DegradeableArmor
-    armorMaxHealth: 900
+    armorMaxHealth: 950
     armorType: Ceramic
     armorRepair: NTCeramic
     initialModifiers:
