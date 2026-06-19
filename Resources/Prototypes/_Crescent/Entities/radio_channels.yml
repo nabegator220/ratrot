@@ -6,14 +6,6 @@
   color: "#bf4d00"
 
 - type: radioChannel
-  id: NCWLCommand
-  name: chat-radio-ncwlcommand
-  keycode: 'п'
-  frequency: 3483
-  color: "#d66113"
-  longRange: true
-
-- type: radioChannel
   id: Imperial
   name: chat-radio-empire
   keycode: "и"
@@ -47,14 +39,6 @@
   keycode: "м"
   frequency: 6223
   color: "#cbc3e3"
-
-- type: radioChannel
-  id: SyndicateCommand
-  name: chat-radio-syndicatecommand
-  keycode: 'з'
-  frequency: 1453
-  color: "#d34d4f"
-  longRange: true
 
 - type: radioChannel
   id: Gorlex
