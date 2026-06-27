@@ -96,7 +96,7 @@
   description: |
     Свободное объединение независимых групп, состоящее из пиратов, каперов, кораблеломщиков и хищных медицинских специалистов,
     почти не имеющих угрызений совести при изъятии ваших органов для себя. Наиболее заметные группы: Gorlex Security Consulting,
-    Interdyne Pharmaceuticals, Cyberdawn Technologies и Shipfitters Astronautics Workers Union. Каждая из них предлагает
+    Interdyne Pharmaceuticals и Cyberdawn Technologies. Каждая из них предлагает
     определённые услуги и извлекает из них прибыль. Иногда их сравнивают с падальщичьей экосистемой за то, как они действуют.
 
     Они родились из старого Нового Синдиката Каперов Полумесяца, фракции, сформированной перебежчиками из Мандата и Лиги, желавшими
@@ -127,7 +127,7 @@
     рэкетиров и игроков.
   color: "#9FED58"
   weight: 4
-  enabled: true
+  enabled: false
   icon:
     sprite: /Textures/_Crescent/faction_icons.rsi
     state: fourfamilies
@@ -153,7 +153,7 @@
     Вы все равно должны быть осторожны во время их Охоты, если вы не человек - они не склонны к милосердию.
   color: "#9FED58"
   weight: 3
-  enabled: true
+  enabled: false
   icon:
     sprite: /Textures/_Crescent/faction_icons.rsi
     state: srm
@@ -200,7 +200,7 @@
     они находятся под управлением колониального маршала, координирующего отряды ополчения во всей системе, и управляющего станцией.
   color: "#9FED58"
   weight: 1
-  enabled: true
+  enabled: false
   icon:
     sprite: /Textures/_Crescent/faction_icons.rsi
     state: tsp
