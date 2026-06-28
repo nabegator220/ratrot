@@ -54,7 +54,7 @@
         volume: 5
         temperature: 293.15
     - type: Jetpack
-      moleUsage: 0.0045
+      moleUsage: 0.0016
     - type: Appearance
     - type: HullJetpack
     - type: StaticPrice
