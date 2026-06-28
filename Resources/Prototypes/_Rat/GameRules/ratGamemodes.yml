@@ -35,20 +35,6 @@
         posY: 1000
         IFFColor: White
         IFFFaction: SHI
-      Castle:
-        gameMapID: Castle
-        posX: -3000
-        posY: 7000
-        IFFColor: Green
-        IFFFaction: SRM
-        randomOffsetX: 2000
-        randomOffsetY: 2000
-      Dochenskaya:
-        gameMapID: Dochenskaya
-        posX: 6000
-        posY: 1000
-        IFFColor: IndianRed
-        IFFFaction: TFSC
       Jackal:
         gameMapID: Jackal
         posX: 8000
@@ -67,18 +53,10 @@
         posY: -4000
         IFFColor: IndianRed
         IFFFaction: TFSC
-      TribalHideout:
-        gameMapID: TribalHideout
-        posX: 2000
-        posY: -7000
-        IFFColor: White
-        IFFFaction: TAP
-        randomOffsetX: 2000
-        randomOffsetY: 2000
       IronRing:
         gameMapID: IronRing
-        posX: -3000
-        posY: 500
+        posX: 3000
+        posY: -3000
       RatFakel:
         gameMapID: RatFakel
         posX: 0

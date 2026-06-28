@@ -122,8 +122,8 @@
   - OperativeNCSP
   #- IntelligenceOfficerNCSP
   - CyberdawnTechNCSP
-  - ForemanNCSP
-  - ShipbreakerNCSP
+  #- ForemanNCSP
+  #- ShipbreakerNCSP
   editorHidden: false
 
 - type: department
@@ -162,7 +162,7 @@
   - HunterSRM
   - MontagneSRM
   - OverseerSRM
-  editorHidden: false # i just like to see them for the numbers , SPCR 2025
+  editorHidden: true # i just like to see them for the numbers , SPCR 2025
 
 - type: department
   id: SHI
@@ -210,7 +210,7 @@
   - BeltrunnerTAP
   - DraugrTAP
   - ServileTAP
-  editorHidden: false
+  editorHidden: true
 
 - type: department
   id: ATH
