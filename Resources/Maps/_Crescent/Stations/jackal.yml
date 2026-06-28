@@ -19721,7 +19721,7 @@ entities:
       parent: 1
     - type: IFFConsole
       heatDissipation: 5
-      heatCapacity: 2000
+      heatCapacity: 400
       allowColorChange: True
 - proto: ComputerTabletopPowerMonitoring
   entities:
@@ -33319,4 +33319,4 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 0.3154785,-25.410307
       parent: 1
-...
+...
