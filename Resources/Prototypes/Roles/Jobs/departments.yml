@@ -115,12 +115,12 @@
   - RingleaderNCSP
   - LieutenantNCSP
   - InfanteerNCSP
-  - TechnicianNCSP
-  - CoordinatorNCSP
+  #- TechnicianNCSP new conception comments out these jobs
+  #- CoordinatorNCSP
   - RipperdocNCSP
   - TraumasecNCSP
   - OperativeNCSP
-  - IntelligenceOfficerNCSP
+  #- IntelligenceOfficerNCSP
   - CyberdawnTechNCSP
   - ForemanNCSP
   - ShipbreakerNCSP
