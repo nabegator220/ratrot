@@ -23,18 +23,18 @@ job-name-ncwl-newbie = Рабочий
 
 # syndicate
 
-job-name-ringleader = Главарь Горлекс
-job-name-lieutenant = Лейтенант Горлекс
-job-name-infanteer = Пехотинец Горлекс
+job-name-ringleader = Организатор
+job-name-lieutenant = Командир
+job-name-infanteer = Солдат
 job-name-technician = Новобранец Горлекс
 job-name-coordinator = Координатор Интердайн
-job-name-ripperdoc = Хирург Интердайн
-job-name-traumasec = Агент Интердайн
-job-name-operative = Оперативник Кибердон
-job-name-cyberdawntech = Исследователь Кибердон
+job-name-ripperdoc = Боевой медик
+job-name-traumasec = Медицинский охранник
+job-name-operative = Диверсант
+job-name-cyberdawntech = Исследователь
 job-name-intelligenceofficer = Патриарх Кибердон
-job-name-shipbreaker = Разборщик Профсоюза
-job-name-foreman = Бригадир Профсоюза
+job-name-shipbreaker = Техник
+job-name-foreman = Надзиратель
 ghost-role-information-syndicate-cyborg-assault-name-c = CS 5401 Сигоу атакующий киборг
 ghost-role-information-syndicate-cyborg-Medical-name = CS 4201 Яо Ванг боевой медицинский киборг
 ghost-role-information-syndicate-cyborg-saboteur-name-c = CS 3201 Сунь Укун боевой диверсионный киборг

@@ -19711,14 +19711,18 @@ entities:
       rot: 3.141592653589793 rad
       pos: -8.5,-28.5
       parent: 1
-- proto: ComputerTabletopIFF
+- proto: ComputerTabletopIFFSyndicate
   entities:
-  - uid: 1841
+  - uid: 121
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -0.5,-16.5
+      rot: 1.5707963267948966 rad
+      pos: -0.5,2.5
       parent: 1
+    - type: IFFConsole
+      heatDissipation: 5
+      heatCapacity: 500
+      allowColorChange: True
 - proto: ComputerTabletopPowerMonitoring
   entities:
   - uid: 1842
