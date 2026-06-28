@@ -31,8 +31,10 @@
         IFFFaction: DSM
       Tatsumoto:
         gameMapID: Tatsumoto
-        posX: -6000
-        posY: 1000
+        posX: 2500
+        posY: 0
+        randomOffsetX: 1000
+        randomOffsetY: 2000
         IFFColor: White
         IFFFaction: SHI
       Jackal:
@@ -41,6 +43,12 @@
         posY: -2000
         IFFColor: IndianRed
         IFFFaction: TFSC
+      GliessSanto:
+        gameMapID: GliessSanto
+        posX: -2000
+        posY: 2000
+        randomOffsetX: 1000
+        randomOffsetY: 1000
       TribalHideout:
         gameMapID: TribalHideout
         posX: 2000
@@ -53,6 +61,8 @@
         gameMapID: IronRing
         posX: -3000
         posY: 500
+        randomOffsetX: 1000
+        randomOffsetY: 1000
       RatFakel:
         gameMapID: RatFakel
         posX: 0
@@ -98,8 +108,10 @@
         IFFFaction: DSM
       Tatsumoto:
         gameMapID: Tatsumoto
-        posX: -6000
-        posY: 1000
+        posX: 2500
+        posY: 0
+        randomOffsetX: 1000
+        randomOffsetY: 2000
         IFFColor: White
         IFFFaction: SHI
       Freeport:
@@ -108,6 +120,12 @@
         posY: -2000
         IFFColor: IndianRed
         IFFFaction: TFSC
+      GliessSanto:
+        gameMapID: GliessSanto
+        posX: -2000
+        posY: 2000
+        randomOffsetX: 1000
+        randomOffsetY: 1000
       TribalHideout:
         gameMapID: TribalHideout
         posX: 2000
@@ -120,6 +138,8 @@
         gameMapID: IronRing
         posX: -3000
         posY: 500
+        randomOffsetX: 1000
+        randomOffsetY: 1000
       RatFakel:
         gameMapID: RatFakel
         posX: 0
