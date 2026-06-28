@@ -19,7 +19,6 @@
   cost: 3000
   recipeUnlocks:
   - WeaponRifleCMMNimrod
-  - WeaponSubMachineGunWt550
 
 - type: technology
   id: MinutemenHybridCorvette
