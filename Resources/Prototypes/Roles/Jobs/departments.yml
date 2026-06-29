@@ -116,11 +116,11 @@
   - LieutenantNCSP
   - InfanteerNCSP
   #- TechnicianNCSP new conception comments out these jobs
-  #- CoordinatorNCSP
+  - CoordinatorNCSP
   - RipperdocNCSP
   - TraumasecNCSP
   - OperativeNCSP
-  #- IntelligenceOfficerNCSP
+  - IntelligenceOfficerNCSP
   - CyberdawnTechNCSP
   - ForemanNCSP
   - ShipbreakerNCSP
