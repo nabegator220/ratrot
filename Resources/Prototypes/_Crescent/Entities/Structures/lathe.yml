@@ -1164,7 +1164,7 @@
       - BookPressMachineCircuitboard
       - CircuitImprinterMachineCircuitboard
       - BiogeneratorMachineCircuitboard
-      - OreProcessorMachineCircuitboard
+      # - OreProcessorMachineCircuitboard new conception
       - MaterialReclaimerMachineCircuitboard
       - ElectrolysisUnitMachineCircuitboard
       - CentrifugeMachineCircuitboard
@@ -1223,7 +1223,7 @@
       - TechDiskComputerCircuitboard
       - DawInstrumentMachineCircuitboard
       - CloningConsoleComputerCircuitboard
-      - OreProcessorIndustrialMachineCircuitboard
+      # - OreProcessorIndustrialMachineCircuitboard new conception
       - CargoTelepadMachineCircuitboard
       - RipleyCentralElectronics
       - RipleyPeripheralsElectronics
