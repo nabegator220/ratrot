@@ -562,7 +562,7 @@
   result: EnergySwordDouble
   completetime: 1.5
   materials:
-    NanotrasenElectronics: 1000
+    NanotrasenElectronics: 500
     HardlightGenerator: 500
     Steel: 500
     LaserLocus: 1000
