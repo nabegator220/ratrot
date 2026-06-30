@@ -59,9 +59,9 @@
         randomOffsetY: 2000
       IronRing:
         gameMapID: IronRing
-        posX: -3000
-        posY: 500
-        randomOffsetX: 1000
+        posX: -1000
+        posY: 0
+        randomOffsetX: 500
         randomOffsetY: 1000
       RatFakel:
         gameMapID: RatFakel
