@@ -9,7 +9,6 @@
     maxSyllables: 3
     replacement:
       - ack
-      - chop
       - clk
       - brst
       - ping
@@ -47,7 +46,6 @@
       - scope
       - jam
       - scram
-      - ping
       - pong
       - tick
       - tock
