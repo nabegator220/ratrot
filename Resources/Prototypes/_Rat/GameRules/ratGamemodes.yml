@@ -64,6 +64,7 @@
         gameMapID: ImperialHaulerWreck
         posX: 1000
         posY: -2000
+        hideIFF: true
       Fighter1:
         gameMapID: Fighter1
         posX: 500
@@ -78,20 +79,29 @@
         gameMapID: SolarSailorDerelict
         posX: 4000
         posY: 1500
-      StrandedShip:
-        gameMapID: StrandedShip
-        posX: -1000
-        posY: -1000
-        HideIFF: true
+        hideIFF: true
       FogwreckedDerelict:
         gameMapID: FogwreckedDerelict
         posX: -1000
         posY: 1000
         HideIFF: true
-      TribalScrapyard:
-        gameMapID: TribalScrapyard
-        posX: -3500
-        posY: -1400
+      IronRing:
+        gameMapID: IronRing
+        posX: 0
+        posY: 4000
+      RatKovf:
+        gameMapID: RatKovf
+        posX: 3000
+        posY: -500
+      DerelictWaystation:
+        gameMapID: DerelictWaystation
+        posX: 0
+        posY: -3000
+      StrandedShip:
+        gameMapID: StrandedShip
+        posX: 2000
+        posY: 5000
+        HideIFF: true
       Graveyard:
         gameMapID: Graveyard
         posX: -1000

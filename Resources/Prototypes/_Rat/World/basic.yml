@@ -15,14 +15,14 @@
 - type: spaceBiome
   id: RatGraveyardWrecks
   priority: 9000
-  minX: -10
-  maxX: -6
-  minY: 29
-  maxY: 33
+  minX: -28
+  maxX: -2
+  minY: 28
+  maxY: 48
   noiseRanges: {}
   chunkComponents:
   - type: DebrisFeaturePlacerController
-    densityNoiseChannel: DensityGraveyard
+    densityNoiseChannel: Density
   - type: NoiseDrivenDebrisSelector
     noiseChannel: WreckGraveyard
     debrisTable:
@@ -421,10 +421,10 @@
 - type: spaceBiome
   id: RatCraster
   priority: 9000
-  minX: 0
-  maxX: 2
-  minY: 0
-  maxY: 2
+  minX: 14
+  maxX: 18
+  minY: -18
+  maxY: -13
   noiseRanges: {}
   chunkComponents:
   - type: DebrisFeaturePlacerController
