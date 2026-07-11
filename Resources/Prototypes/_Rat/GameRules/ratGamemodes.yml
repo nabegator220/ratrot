@@ -64,7 +64,7 @@
         gameMapID: ImperialHaulerWreck
         posX: 1000
         posY: -2000
-        hideIFF: true
+        HideIFF: true
       Fighter1:
         gameMapID: Fighter1
         posX: 500
@@ -79,7 +79,7 @@
         gameMapID: SolarSailorDerelict
         posX: 4000
         posY: 1500
-        hideIFF: true
+        HideIFF: true
       FogwreckedDerelict:
         gameMapID: FogwreckedDerelict
         posX: -1000
